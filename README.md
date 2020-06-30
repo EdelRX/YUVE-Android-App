@@ -8,6 +8,6 @@ Calls to a Geo-localization service to determine which movie theatres are close 
 
 ![Movie screen](https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve1.JPG?raw=true)
 
-https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve2.JPG?raw=true
+![Search screen](https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve2.JPG?raw=true)
 
-https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve3.JPG?raw=true
+![Title screen](https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve3.JPG?raw=true)
