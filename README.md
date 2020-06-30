@@ -6,7 +6,7 @@ Calls to an external api to load the most recent and relevant movie titles and d
 Calls to a Geo-localization service to determine which movie theatres are close to your current location.
 
 
-https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve1.JPG?raw=true
+![Movie screen](https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve1.JPG?raw=true)
 
 https://github.com/EdelRX/YUVE-Android-App/blob/master/Yuve2.JPG?raw=true
 
