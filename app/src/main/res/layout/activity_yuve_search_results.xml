@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    tools:context="com.edeldoe.yuveapp.yuve_opening">
+
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical"
+            android:indeterminate="true"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnWidth="100dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"/>
+
+    <ListView
+
+
+        android:id="@+id/slider_menu"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:id="@+id/search_bar"
+        android:textSize="25sp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        >
+
+    </EditText>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonslayout"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center_horizontal|bottom"
+        android:padding="15dp">
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

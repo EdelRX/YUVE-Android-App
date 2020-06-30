@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.edeldoe.yuveapp.miyuve"
+    >
+    <RelativeLayout
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical"
+            android:indeterminate="true"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorites"
+                android:id="@+id/fav"
+                android:textSize="25sp"/>
+
+
+            <GridView
+                android:layout_below="@id/fav"
+                android:id="@+id/favorites_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="100dp"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:focusable="true"
+                android:clickable="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watchlist"
+                android:id="@+id/wat"
+                android:textSize="25sp"
+                />
+
+            <GridView
+                android:layout_below="@id/wat"
+                android:id="@+id/watchlist_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="100dp"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:focusable="true"
+                android:clickable="true"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom List"
+                android:id="@+id/lista"
+                android:textSize="25sp"/>
+
+            <GridView
+                android:layout_below="@id/lista"
+                android:id="@+id/lista_personalizada"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="100dp"
+                android:drawSelectorOnTop="true"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="5dp"
+                android:focusable="true"
+                android:clickable="true"/>
+
+            <Button
+                android:id="@+id/clearwatch_button"
+                android:text="edit"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:onClick="handlelist"
+                android:layout_above="@+id/lista_personalizada"
+                android:layout_toRightOf="@+id/lista"
+                android:layout_toEndOf="@+id/lista"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/miyuveButtonsLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_gravity="bottom">
+
+    </RelativeLayout>
+
+    <ListView
+
+        android:id="@+id/slider_menu"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:id="@+id/search_bar"
+        android:textSize="25sp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        >
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/listname"
+        android:textSize="25sp"
+        android:visibility="gone"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:hint = "New list name..."
+        android:onClick="removehint"
+        >
+
+    </EditText>
+
+
+
+
+
+</FrameLayout>

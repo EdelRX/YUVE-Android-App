@@ -1,0 +1,42 @@
+<resources>
+    <!-- APP titles strings -->
+
+    <string name="app_name">Yuve App</string>
+
+    <string name="title_activity_yuve_opening">yuve_opening</string>
+
+    <string name="title_activity_yuve_movie">yuve_movie</string>
+    <string name="title_activity_yuve_search_results">yuve_search_results</string>
+    <string name="title_activity_yuve_nowplaying">yuve_nowplaying</string>
+    <string name="title_activity_yuve_start">yuve_start</string>
+    <string name="title_activity_yuve_watchlist">yuve_watchlist</string>
+    <string name="title_activity_yuve_popular">yuve_popular</string>
+    <string name="title_activity_yuve_favorites">yuve_favorites</string>
+    <string name="title_activity_miyuve">miyuve</string>
+    <string name="title_activity_yuve_custom">yuve_custom</string>
+    <string name="title_activity_yuve_maps">yuve_maps</string>
+
+
+
+    <!-- API strings -->
+    <string name="APIKey">36e0ece2f7eee65440f0b495a712456d</string>
+    <string name="OpeningURL">http://api.themoviedb.org/3/movie/upcoming?api_key=36e0ece2f7eee65440f0b495a712456d&amp;page=</string>
+    <string name="PopularURL">http://api.themoviedb.org/3/movie/popular?api_key=36e0ece2f7eee65440f0b495a712456d&amp;page=</string>
+    <string name="SearchURL">https://api.themoviedb.org/3/search/movie?api_key=36e0ece2f7eee65440f0b495a712456d&amp;query=</string>
+    <string name="MovieURL">http://api.themoviedb.org/3/movie/</string>
+    <string name="TrailerURL">/videos?api_key=36e0ece2f7eee65440f0b495a712456d</string>
+    <string name="YoutubeURL">https://www.youtube.com/watch?v=</string>
+    <string name="PosterPath">http://image.tmdb.org/t/p/w500</string>
+    <string name="google_api_key">AIzaSyAc-k92KsbO4Ii1ID0hBN9WeDGwFSc1Bpo</string>
+    <string name="nowplayingURL">http://api.themoviedb.org/3/movie/now_playing?api_key=36e0ece2f7eee65440f0b495a712456d&amp;page=</string>
+
+
+    <!-- Menu Strings -->
+    <string name="Popular">Popular</string>
+    <string name="nowplaying">Now Playing</string>
+    <string name="Upcoming">Upcoming</string>
+    <string name="Favorites">Favorites</string>
+    <string name="Watchlist">Watchlist</string>
+    <string name="miyuve">My Yuve</string>
+    <string name="Maps">Theater Map</string>
+</resources>

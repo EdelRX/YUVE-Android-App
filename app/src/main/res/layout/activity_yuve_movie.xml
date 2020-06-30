@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.edeldoe.yuveapp.yuve_movie"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="9"
+        android:orientation="vertical">
+        <RelativeLayout android:id="@+id/movieLayoutTop"
+            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_weight="4"
+            >
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="180dp"
+                android:layout_height="230dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true" />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratings"
+                android:layout_toEndOf="@id/poster"
+                android:layout_toRightOf="@id/poster"
+                android:text="DefaultRatings"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/genre"
+                android:layout_toEndOf="@id/poster"
+                android:layout_toRightOf="@id/poster"
+                android:layout_below="@id/ratings"
+                android:text="DefaultGenre"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/release_date"
+                android:layout_toEndOf="@id/poster"
+                android:layout_toRightOf="@id/poster"
+                android:layout_below="@id/genre"
+                android:text="DefaultDate"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/popularity"
+                android:layout_toEndOf="@id/poster"
+                android:layout_toRightOf="@id/poster"
+                android:layout_below="@id/release_date"
+                android:text="DefaultPopularity"
+                android:textSize="20sp"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/movie_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/titulo_pelicula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                />
+            <ScrollView
+                android:paddingTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo_pelicula"
+                android:scrollbars="vertical"
+                android:fillViewport="true">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textSize="18sp"
+                    />
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/movieButtonsLayout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+            <Button
+                android:id="@+id/watchlist_button"
+                android:background="@drawable/ic_watchlist"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:onClick="addToWatchlist"/>
+            <Button
+                android:id="@+id/favorite_button"
+                android:background="@drawable/ic_favorites"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:onClick="addToFavorites"
+                android:layout_toRightOf="@id/watchlist_button"
+                android:layout_toEndOf="@id/watchlist_button"
+                />
+
+            <Button
+                android:id="@+id/play_trailer"
+                android:background="@drawable/selector"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@id/favorite_button"
+                android:layout_toRightOf="@id/favorite_button"
+                android:onClick="playTrailer"
+                />
+
+            <Button
+                android:id="@+id/customlist_button"
+                android:background="@drawable/ic_more"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/play_trailer"
+                android:onClick="addToCustom"
+
+                >
+
+            </Button>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/slider_menu"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorAccent"
+        android:dividerHeight="1dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:id="@+id/search_bar"
+        android:textSize="25sp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:visibility="gone"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        />
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/trailer"
+        android:visibility="gone"/>
+
+
+
+
+</FrameLayout>

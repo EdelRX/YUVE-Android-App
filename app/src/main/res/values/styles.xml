@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme"
+        parent="@android:style/Theme.Holo.Light">
+
+        <item name="android:windowBackground">@color/colorPrimaryDark</item>
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:listViewStyle">@style/SlidingMenuStyle</item>
+        <item name="android:editTextStyle">@style/SearchBarStyle</item>
+        <item name="android:buttonStyle">@style/MyButtonStyle</item>
+    </style>
+
+    <style name="MyActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:actionBarItemBackground">@color/barColor</item>
+        <item name="android:background">@color/barColor</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+    </style>
+
+    <style name="SlidingMenuStyle"
+        parent="android:Widget.ListView">
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:itemBackground">@color/colorPrimary</item>
+        <item name="android:editTextBackground">@color/colorPrimary</item>
+    </style>
+    <style name="ActionBarTitle"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+    <style name="SearchBarStyle"
+        parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+    <style name="MyButtonStyle"
+        parent="@android:style/Widget.Holo.Button">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>
